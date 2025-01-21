@@ -51,7 +51,7 @@ Este proyecto forma parte del Challenge propuesto por **Alura Latam**. Consiste 
 
 ## Capturas de Pantalla 📸
 
-![imgs/img-readme.png]()
+![Captura de pantalla](./imgs/img-readme.png)
 
 ## Desafíos y Aprendizajes 📚
 
