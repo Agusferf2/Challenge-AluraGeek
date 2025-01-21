@@ -1,0 +1,250 @@
+html{
+    font-size: 14px;
+}
+body {
+    font-family: "Press Start 2P", system-ui;
+    min-height: 100vh;
+    font-weight: 400;
+    font-style: normal;  
+    position: relative;
+    padding-bottom: 8em ;
+}
+:root {
+    --light-blue: #4874da;
+    --dark-blue: #03318C;
+}
+
+
+/* Estilos del Header */
+header {
+    height: 6em;
+    background: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 23.375em;
+    height: 3.5em;
+}
+
+
+/* Estilos del Main */
+main {
+    width: 100%;
+    display: flex;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100vw;
+    height: 55em;
+    padding: 1.25em 1.25em;
+}
+
+.titulo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0.9375em;
+    text-align: center;
+}
+
+#seccion__productos {
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: start;
+    width: 50vw;   
+}
+
+.pared-prouctos {
+    width: 100%;
+    height: 48.25em;
+    padding: 0.9375em;
+    display: flex;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.lista-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.3125em;
+}
+
+.producto {
+    width: 11.125em;
+    height: 16.125em;
+    display: flex;
+    flex-direction: column;
+    background: var(--light-blue);
+    box-shadow: 0.3125em 0.375em 0.625em rgba(0,0,0, 0.25);
+    border-radius: 0.625em;
+    border: 0.1875em solid #000000;
+    padding: 0.625em;
+    margin-bottom: 1.875em;
+}
+
+.img-producto {
+    width: 11em;
+    height: 10.875em;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 0.125em solid #000000;
+}
+
+.descripcion-producto {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 0.9375em 0;
+    text-align: center;
+}
+
+.producto > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio-producto {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 0.9375em 0;
+}
+
+.icono-eliminar {
+    width: 1.25em;
+    height: 1.25em;
+    cursor: pointer;
+}
+
+#seccion__agregar__productos {
+    height: 23em;
+    padding: 1.25em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form-agregar-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 2.5em;
+}
+
+.campo-form {
+    padding: 0.625em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-form > input {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.25em;
+    width: 21.875em;
+    height: 2.5em;
+    border: 0.1875em solid var(--dark-blue);
+    border-radius: 50px;
+    padding: 0em 0.9375em;
+}
+
+.campo-form > input::placeholder {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #03318cb0;
+}
+
+.mensaje-error {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.625em;
+    color: #ff0000;
+    padding-top: 0.625em;
+}
+
+.form-agregar-producto > div {
+    width: 25em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-enviar {
+    width: 11.75em;
+    height: 3.4375em;
+    border-radius: 15px;
+    background: var(--dark-blue);
+    color: white;
+    cursor: pointer;
+}
+
+#btn-limpiar {
+    width: 11.75em;
+    height: 3.4375em;
+    border-radius: 15px;
+    border: 0.25em solid var(--dark-blue); 
+    background: white;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+/* Estilos del Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.125em;
+    background: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
+    width: 23.375em;
+    height: 3.5em;
+}
+
+.footer__line1 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1280px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 610px) {
+    html{
+        font-size: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+    .contenedor{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #seccion__productos{
+        width: 80%;
+        height: 80%;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "ad4e",
+      "nombre": "Hot Toy Rocket",
+      "precio": "2000",
+      "imagen": "https://frikipolis.com/wp-content/uploads/2023/05/hot-toys-marvel-figura-guardianes-de-la-galaxia-vol3-rocket-and-cosmo14-200x200.webp"
+    },
+    {
+      "id": "9b08",
+      "nombre": "Funko Pop Pitufos",
+      "precio": "100",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHhu8oiBQ8Qy1oxSykzoU8GBhjOAm1PvBAFg&s"
+    },
+    {
+      "id": "0aa7",
+      "nombre": "Llavero PokeBola",
+      "precio": "50",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_166715-MLM25309249380_012017-O.webp"
+    },
+    {
+      "id": "ffa8",
+      "nombre": "Comics Xmen",
+      "precio": "100",
+      "imagen": "https://www.oldskull.net/wp-content/uploads/2007/04/portadas-comics-oldskull-5.jpg"
+    }
+  ]
+}
